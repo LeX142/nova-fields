@@ -126,9 +126,10 @@
 
 <script>
 import storage from '../../storage/BelongsToFieldStorage'
+import TogglesTrashed from '../../../../vendor/laravel/nova/resources/js/mixins/TogglesTrashed';
+import PerformsSearches from '../../../../vendor/laravel/nova/resources/js/mixins/PerformsSearches';
+
 import {
-  TogglesTrashed,
-  PerformsSearches,
   HandlesValidationErrors
 } from 'laravel-nova'
 import ModalCreate from '../../modals/ModalCreate'

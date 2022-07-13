@@ -38,10 +38,10 @@
 </template>
 
 <script>
+import InteractsWithDates from '../../../../vendor/laravel/nova/resources/js/mixins/InteractsWithDates';
 import {
   FormField,
   HandlesValidationErrors,
-  InteractsWithDates,
 } from 'laravel-nova'
 import DateTimePicker from '../date/DateTimePicker'
 import R64Field from "../../mixins/R64Field";

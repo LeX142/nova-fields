@@ -23,8 +23,7 @@
 </template>
 
 <script>
-import FormField from 'laravel-nova/src/mixins/FormField'
-import HandlesValidationErrors from 'laravel-nova/src/mixins/HandlesValidationErrors'
+import {FormField, HandlesValidationErrors} from 'laravel-nova';
 import R64Field from '../../mixins/R64Field'
 
 export default {

@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { Minimum } from 'laravel-nova'
+import { minimum } from '../../../vendor/laravel/nova/resources/js/util';
 
 export default {
     props: {
@@ -28,7 +28,7 @@ export default {
     }),
 
     mounted() {
-        Minimum(
+        minimum(
             new Promise((resolve, reject) => {
                 let image = new Image()
                 image.addEventListener('load', () => resolve(image))

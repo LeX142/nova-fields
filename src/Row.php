@@ -377,7 +377,7 @@ class Row extends Field
      *
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): array
     {
         return array_merge(parent::jsonSerialize(), [
             'sanitizedAttribute' => Str::plural(Str::kebab($this->attribute)),
