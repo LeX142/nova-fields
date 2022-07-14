@@ -8,3 +8,6 @@ mix
     .vue({ version: 3 })
     .sass('resources/sass/field.scss', 'css')
     .nova('64robots/nova-fields')
+    .alias({
+        '@': 'vendor/laravel/nova/resources/js/',
+    })
