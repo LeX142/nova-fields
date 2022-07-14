@@ -106,15 +106,15 @@ export default {
     },
 
     onCreate() {
-      return this.$route.name === 'create'
+      return window.location.pathname.indexOf('new') > -1;
     },
 
     onUpdate() {
-      return this.$route.name === 'edit'
+        return window.location.pathname.indexOf('edit') > -1;
     },
 
     onDetail() {
-      return this.$route.name === 'detail'
+        return window.location.pathname.indexOf(this.resourceId) > -1 && window.location.pathname.indexOf('edit') === -1;
     }
   },
 
