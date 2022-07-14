@@ -53,7 +53,7 @@ export default {
 
     wrapperClasses: {
       type: String,
-      default: 'flex border-b border-40'
+      default: 'flex'
     },
 
     hideLabel: {
